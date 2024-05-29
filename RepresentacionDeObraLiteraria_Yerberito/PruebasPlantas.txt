@@ -1,0 +1,103 @@
+Este archivo contiene las pruerbas necesarias para revisaar
+el funcionamiento del programa en prolog sobre las plantas
+
+%Conceptos principales
+% Prueba para verificar los efectos colaterales de la medicina de patente
+?- tiene_efectos_colaterales(medicina_de_patente).
+
+% Prueba para verificar que el cuerpo recibe sustancias antinaturales
+?- recibe_sustancias_antinaturales(cuerpo).
+
+% Prueba para verificar que la medicina moderna provoca nuevas enfermedades
+?- provoca_nuevas_enfermedades(medicina_moderna).
+
+% Prueba para verificar enfermedades causadas por tratamientos médicos
+?- causa_enfermedad(iatrogenia, tratamientos_medicos).
+
+% Prueba para verificar la clasificación de más de 800 plantas por Dioscórides
+?- clasificacion_de_plantas(dioscorides, mas_de_800).
+
+% Prueba para verificar los usos de plantas por los egipcios
+?- usos_de_plantas(egipcios, curar_anestesiar_momificar).
+
+% Prueba para verificar el desarrollo de la herbolaría en China y México
+?- desarrollo_de_herbolaria(pais, china).
+?- desarrollo_de_herbolaria(pais, mexico).
+
+% Prueba para verificar si la herbolaria estuvo a punto de desaparecer en la Edad Media
+?- a_punto_de_desaparecer(herbolaria, edad_media).
+
+% Prueba para verificar la composición de la industria de la salud
+?- composicion_industria_salud(laboratorios).
+?- composicion_industria_salud(medicos).
+?- composicion_industria_salud(clinicas).
+?- composicion_industria_salud(sanatorios).
+
+% Prueba para verificar las drogas milagrosas
+?- drogas_milagrosas(talidomida).
+?- drogas_milagrosas(stalinon).
+
+% Prueba para verificar los efectos secundarios de las medicinas
+?- efectos_secundarios(medicina, congestión_hepatica).
+?- efectos_secundarios(medicina, congestión_renal).
+?- efectos_secundarios(medicina, fatiga_excesiva).
+?- efectos_secundarios(medicina, adicción).
+?- efectos_secundarios(medicina, alergias).
+?- efectos_secundarios(medicina, daño_flora_intestinal).
+?- efectos_secundarios(medicina, colitis).
+?- efectos_secundarios(medicina, gastritis).
+
+% Prueba para verificar si las plantas son esencia de la medicina natural
+?- plantas_esencia_medicina_naturaleza.
+
+% Prueba para verificar si la OMS exige el desarrollo de la herbolaría
+?- oms_exige_desarrollo_herbolaria(paises).
+
+% Prueba para verificar los modos de preparación
+?- modo_preparacion(cocimiento, hierba_o_raiz).
+?- modo_preparacion(infusion, hierba_o_raiz).
+?- modo_preparacion(maceracion, planta_triturada).
+?- modo_preparacion(jarabe, planta).
+?- modo_preparacion(tintura, planta_triturada).
+?- modo_preparacion(jugo, plantas_exprimidas).
+?- modo_preparacion(horchata, semillas_molidas).
+
+% Prueba para verificar el efecto de las hierbas
+?- efecto_hierbas(estimulante, hierbas).
+?- efecto_hierbas(calmante, hierbas).
+?- efecto_lento_seguro.
+
+
+%PLANTAS ASIGNADAAS
+% Prueba para verificar las plantas que se pueden preparar en té
+?- planta_con_te(X).
+
+% Prueba para encontrar plantas que ayudan a calmar la menstruación
+?- planta_con_uso(X, calma_menstruacion).
+
+% Prueba para encontrar todas las combinaciones posibles de la planta Salvia
+?- combinacion(salvia, X).
+
+% Prueba para verificar las propiedades de la planta Salvia
+?- propiedad(salvia, X).
+
+% Prueba para buscar plantas que pueden ser usadas para el tratamiento de la jaqueca
+?- planta_con_uso(X, alivio_de_jaquecas).
+
+% Prueba para verificar los usos del Ruibarbo
+?- uso(ruibarbo, X).
+
+% Prueba para identificar las preparaciones recomendadas para Sen
+?- modo_preparacion(sen, X).
+
+% Prueba para identificar el origen de Ruibarbo
+?- origen(ruibarbo, X).
+
+% Prueba para verificar las plantas con origen desconocido
+?- origen(X, desconocido).
+
+% Prueba para buscar plantas por su nombre científico
+?- planta(salvia, Y).
+?- planta(ruda, Y).
+?- planta(ruibarbo, Y).
+?- planta(sen, Y).

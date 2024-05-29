@@ -1,0 +1,22 @@
+CASOS DE PRUEBA
+
+pruebas de búsqueda en el árbol binario
+
+mi_arbol_binario(Arbol), buscar_elemento(Arbol, 7, Ruta).
+mi_arbol_binario(Arbol), buscar_elemento(Arbol, 5, Ruta).
+mi_arbol_binario(Arbol), buscar_elemento(Arbol, 10, Ruta).
+
+Pruebas de recorrido preorden
+
+mi_arbol_binario(Arbol), preorder(Arbol, Lista).
+mi_arbol_binario(Arbol), t(Izq, Raiz, Der) = Arbol, preorder(Izq, ListaIzq), preorder(Der, ListaDer), append([Raiz|ListaIzq], ListaDer, Lista).
+
+Pruebas de recorrido inorden
+
+mi_arbol_binario(Arbol), inorder(Arbol, Lista).
+mi_arbol_binario(Arbol), t(Izq, Raiz, Der) = Arbol, inorder(Izq, ListaIzq), inorder(Der, ListaDer), append(ListaIzq, [Raiz|ListaDer], Lista).
+
+Pruebas de recorrido postorden
+
+mi_arbol_binario(Arbol), postorder(Arbol, Lista).
+mi_arbol_binario(Arbol), t(Izq, Raiz, Der) = Arbol, postorder(Izq, ListaIzq), postorder(Der, ListaDer), append(ListaIzq, ListaDer, R1), append(R1, [Raiz], Lista).
