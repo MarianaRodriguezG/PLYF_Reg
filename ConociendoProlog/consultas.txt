@@ -1,0 +1,15 @@
+//Consultar todas las entradas
+entrada(X).
+
+//Consultar todos los platos principales
+plato_principal(X).
+
+//Consultar todas las comidas posibles
+comida(E, P, D).
+//Consultar comidas con pescado como plato principal
+comida(E, P, D), pescado(P).
+//Consultar valor calórico de todas las comidas
+comida(E, P, D), valor_calorico(E, P, D, V).
+
+//Consultar comidas equilibradas
+comida_equilibrada(E, P, D).
