@@ -1,0 +1,1 @@
+signo(8, 5, Signo).
