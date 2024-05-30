@@ -1,0 +1,2 @@
+recetar_a(Remedy, manuel).
+enfermo_de(alicia, Enfermedad).
